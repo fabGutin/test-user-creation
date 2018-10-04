@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<TITLE>Expedicar - Création de compte utilisateur</TITLE>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/daterangepicker.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/parsley.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+</HEAD>
+
+<BODY>
+
+	<div class="container">
+		<div class="header clearfix">
+			<nav>
+				<ul class="nav nav-pills float-right">
+					<li class="nav-item">
+						<a class="nav-link active" href="index.html">Créez votre compte  <span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+			</nav>
+			<h3 class="text-muted">Formulaire de création de compte</h3>
+		</div>
+
+		<div class="jumbotron">
+			<h3 class="display-4 custom_blue">Créez votre compte</h3>
+			<p class="lead">Veuillez remplir le formulaire ci-dessous afin de procéder à l'ouverture de votre compte utilisateur.</p>
+		</div>
+
+
+		<form id="user_creation_form">
+
+			<div class="header clearfix">
+				<h5 class="text-muted">Identification</h5>
+			</div>
+
+			<div class="form-group">
+				<label for="firstname">Prénom :</label>
+				<input type="text" class="form-control" id="firstname" placeholder="Votre prénom">
+			</div>
+
+			<div class="form-group">
+				<label for="lastname">Nom :</label>
+				<input type="text" class="form-control" id="lastname" placeholder="Votre nom">
+			</div>
+
+			<div class="form-group required">
+				<label for="email">Adresse Email :</label>	
+				<input type="email" class="form-control" id="email" placeholder="Votre adresse email" required="required" data-parsley-trigger="focusout" data-parsley-required-message="Veuillez spécifier votre adresse email">
+			</div>
+
+			<div class="form-group required">
+				<label for="birthdate">Date de naissance (JJ/MM/AAAA) :</label>
+				<input type="text" class="form-control" id="birthdate" required="required" data-parsley-date="" data-parsley-trigger="change" data-parsley-required-message="Veuillez spécifier votre date de naissance">
+			</div>
+
+			<div class="header clearfix header-form-body">
+				<h5 class="text-muted">Adresse et numéro de téléphone</h5>
+			</div>
+
+			<div class="form-group">
+				<label for="address1">Adresse :</label>
+				<input type="text" class="form-control" id="address1" placeholder="Votre adresse">
+			</div>
+
+			<div class="form-group">
+				<label for="address2">Complément d'adresse :</label>
+				<input type="text" class="form-control" id="address2" placeholder="Complément d'adresse">
+			</div>
+
+			<div class="form-group">
+				<label for="zipcode">Code postal :</label>
+				<input type="text" class="form-control" id="zipcode" placeholder="Votre code postal">
+			</div>
+
+			<div class="form-group">
+				<label for="city">Ville :</label>
+				<input type="text" class="form-control" id="city" placeholder="Votre ville">
+			</div>
+
+			<div class="form-group">
+				<label for="country">Pays :</label>
+				<select class="form-control custom-select" id="country"></select>
+			</div>
+
+			<div class="form-group required">
+				<label for="phone">Téléphone :</label>
+
+				<div class="form-inline">
+					<select class="form-control custom-select" id="phone_country_code"></select>
+					<input type="tel" class="form-control" placeholder="Votre numéro de téléphone" id="phone" required="required" data-parsley-trigger="focusout" data-parsley-required-message="Veuillez spécifier votre numéro de téléphone">
+				</div>
+			</div>
+
+			<div class="form-group form-footer">
+
+				<div class="alert alert-light form-invalid-feedback" role="alert">
+					Les champs du formulaire ne sont pas renseignés correctement.
+					<br>Veuillez prendre note des erreurs indiquées ci-dessus.
+				</div>
+
+				<button type="submit" class="btn btn-primary">Envoyer</button>
+			</div>
+
+		</form> 
+
+	</div>
+
+	<div class="modal" id="formResultModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<h4 class="modal-title">Données json du formulaire</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<div class="modal-body">
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn" data-dismiss="modal">Fermer</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/moment/moment.min.js"></script>
+	<script src="assets/js/moment/locale/fr.js" charset="UTF-8"></script>
+	<script src="assets/js/daterangepicker.min.js"></script>
+	<script src="assets/js/cleave/cleave.min.js"></script>
+	<script src="assets/js/cleave/addons/cleave-phone.i18n.js"></script>
+	<script src="assets/js/parsley/parsley.min.js"></script>
+	<script src="assets/js/parsley/i18n/fr.js"></script>
+	<script src="assets/js/script.js" ></script>
+
+</BODY>
+</HTML>

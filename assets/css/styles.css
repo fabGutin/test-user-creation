@@ -1,0 +1,146 @@
+body {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.custom_blue {
+  color: #253455;
+}
+
+.header,
+.marketing,
+.footer {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.header {
+  padding-bottom: 1rem;
+  border-bottom: .05rem solid #e5e5e5;
+}
+
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 3rem;
+}
+
+.container-narrow > hr {
+  margin: 2rem 0;
+}
+
+.jumbotron {
+  text-align: center;
+  border-bottom: .05rem solid #e5e5e5;
+  padding: 2rem 1rem;
+}
+
+.jumbotron .btn {
+  padding: .75rem 1.5rem;
+  font-size: 1.5rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link, .btn-primary {
+  background-color: #253455;
+}
+
+.btn-primary {
+  border-color: #253455;
+}
+
+.nav-link:focus, .nav-link:hover, .nav-pills .nav-link.active:hover, .nav-pills .nav-link.active:focus, .btn-primary:focus, .btn-primary:hover {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.header-form-body {
+  margin-top: 30px;
+}
+
+.form-control {
+  width: 90%;
+}
+
+.form-control:focus {
+  border-color: #253455;
+  box-shadow: 0 0 0 .2rem rgba(37,52,85,1);
+}
+
+.form-group.required label:after { 
+ content:"*";
+ color:#dc3545;
+ margin-left: 5px;
+ font-size: 1.2em;
+}
+
+.form-footer{
+ padding-top: 1rem;
+}
+
+.custom-select {
+  display: block;
+}
+
+#phone_country_code, #birthdate {
+  max-width: 200px;
+}
+
+#phone_country_code {
+  margin-right: 10px;
+}
+
+.form-invalid-feedback {
+  display: none;
+  color: #dc3545;
+  border-color: #f5c6cb;
+  margin-top: 15px;
+  text-align: center;
+}
+
+form.is-invalid .form-invalid-feedback {
+  display: block;
+}
+
+
+@media screen and (min-width: 48em) {
+
+  .container {
+    max-width: 46rem;
+  }
+
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .jumbotron {
+    border-bottom: 0;
+  }
+
+}
+
+@media screen and (max-width: 48em) {
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .header h3 {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+
+}
+
+
+
